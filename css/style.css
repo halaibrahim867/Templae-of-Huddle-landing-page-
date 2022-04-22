@@ -3,10 +3,47 @@
     padding:0;
 }
 
+:root{
+    --main-color:rgb(103, 75, 175);
+}
+
 .design{
     height: 100vh;
     background:url(../images/bg-desktop.svg),
-     rgb(103, 75, 175)  ;
+      var(--main-color) ;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.design .image-and-caption{
+    display: flex;
+    justify-content: space-evenly;
+}
+.image-and-caption .caption{
+    max-width: 25rem;
+    color: white;
+}
+.image-and-caption .caption .heading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-block-end: 1rem;
+}
+.image-and-caption .caption .sub-heading{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    font-size: 0.875rem;
+}
+.image-and-caption .button{
+
+    
+    width: 10rem;
+    padding: 0.9375rem;
+    margin-block-start: 1.5rem;
+    border-radius: 10rem;
+    border: none;
+    
+}
+.image-and-caption .button a{
+    text-decoration: none;
+    color:var(--main-color);
 }
