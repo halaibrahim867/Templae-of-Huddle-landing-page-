@@ -1,0 +1,12 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.design{
+    height: 100vh;
+    background:url(../images/bg-desktop.svg),
+     rgb(103, 75, 175)  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
