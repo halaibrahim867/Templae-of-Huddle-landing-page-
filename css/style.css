@@ -1,49 +1,87 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-:root{
-    --main-color:rgb(103, 75, 175);
+:root {
+    --main-color: rgb(103, 75, 175);
 }
 
-.design{
+.design {
     height: 100vh;
-    background:url(../images/bg-desktop.svg),
-      var(--main-color) ;
+    background: url(../images/bg-desktop.svg),
+        var(--main-color);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.design .image-and-caption{
+
+
+.design .image-and-caption img {
+    height: 28.125rem;
+}
+
+.design .image-and-caption {
     display: flex;
     justify-content: space-evenly;
 }
-.image-and-caption .caption{
+
+.image-and-caption .caption {
     max-width: 25rem;
     color: white;
 }
-.image-and-caption .caption .heading{
+
+.image-and-caption .caption .heading {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 2rem;
     margin-block-end: 1rem;
 }
-.image-and-caption .caption .sub-heading{
+
+.image-and-caption .caption .sub-heading {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     font-size: 0.875rem;
 }
-.image-and-caption .button{
 
-    
+.image-and-caption .button {
+
+
     width: 10rem;
     padding: 0.9375rem;
     margin-block-start: 1.5rem;
     border-radius: 10rem;
     border: none;
-    
+
 }
-.image-and-caption .button a{
+
+.image-and-caption .button a {
     text-decoration: none;
-    color:var(--main-color);
+    color: var(--main-color);
+}
+
+.design .social-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-inline-end: 2.8125rem;
+}
+
+.design .social-icon div {
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-inline-end: 0.625rem;
+    font-size: 1rem;
+    padding: .5rem;
+    margin-block-end: .5rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    text-align: center;
+    color: white;
+}
+
+.design .social-icon a {
+    text-decoration: none;
+    color: white;
 }
